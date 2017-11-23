@@ -1,0 +1,139 @@
+/*================= Footer ==================== */
+
+.foo-prix {
+    padding: 40px 0;
+
+    &__leadin {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 12px;
+        @media (min-width: 768px) {
+            font-size: 10px;
+        }
+    }
+}
+.winner-text {
+    color: $yellow_dark;
+    font-size: 18px;
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+}
+footer {
+	background-color: $blue_dark;
+    padding: 10px 0 0;
+    width: 100%;
+
+
+    .icon {
+    	width: 40px;
+    	height: 40px;
+    }
+
+    .copyright {
+		color: $blue_grey;
+    }
+}
+
+.blog-list-item {
+    li {
+        line-height: 24px;
+
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+.foo-links {
+    li {
+        position: relative;
+        display: block;
+        @media (min-width: 768px) {
+            display: inline-block;
+        }
+
+        &:not(:first-child):before {
+            @media (min-width: 768px) {
+                content: "";
+                border-right: 1px solid $white;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.contact-link {
+    a {
+        display: block;
+        font-size: 20px;
+        color: $yellow_dark;
+        padding: 0 30px;
+    }
+
+    &--number {
+        a {
+            color: $blue_grey;
+        }
+    }
+}
+
+
+
+.slide-wrap {
+    .slick-prev:before, 
+    .slick-next:before {
+        top: -3.0px;
+        color: $white;
+        line-height: 15px;
+        opacity: 1;
+    }
+
+    .slick-prev {
+        &:before {
+            content: ""url(../images/arrow-left-01.png);
+        }
+    }
+    
+    .slick-next {
+        &:before {
+            content: url(../images/arrow-right-01.png);
+        }
+    }
+    
+    .slick-prev, 
+    .slick-next {
+        border: none;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border-radius: 50%;
+    }
+    
+    .slick-next {
+        right: 25px;
+        @media (min-width: 768px) {
+            right: 5px;
+        }
+    }
+    
+    .slick-prev {
+        left: 25px;
+        z-index: 10;
+        @media (min-width: 768px) {
+            left: 5px;
+        }
+    }
+    
+    
+    .slick-prev:hover, 
+    .slick-next:hover {
+        outline: none;
+        background: transparent;
+        border: none;
+    }
+    
+}

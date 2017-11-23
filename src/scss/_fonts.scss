@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Nova Normal";
+    src: url("../font/nova-normal.ttf");
+}
+
+$font-default: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+
+
+$nova-normal: "Nova Normal", $font-default;

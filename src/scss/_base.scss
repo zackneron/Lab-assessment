@@ -1,0 +1,202 @@
+html,
+body {
+	width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+    font-family: $nova-normal;
+
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}
+
+body {
+    font-size: 16px;
+    color: $grey;
+}
+
+header,
+nav,
+section,
+footer {
+    display: block;
+}
+
+h1 {
+    color: $blue_dark;
+}
+
+h2 {
+    color: $yellow;
+    font-size: 22px;
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+    @media (min-width: 992px) {
+        font-size: 26px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $blue_darker;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+	margin: 15px 0;
+}
+
+.learn-more {
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    @include transition(all, .5s);
+
+    &:focus {
+        outline: none;
+    }
+    &-primary {
+        background-color: $yellow;
+        border: 1px solid transparent;
+        color: $blue_darker;
+
+        &:hover {
+            background-color: $blue_darker;
+            border-color: $yellow;
+            color: $yellow;
+        }
+    }
+}
+
+.global-title {
+
+    text-transform: uppercase;
+}
+
+.view-more {
+
+}
+
+.center {
+    text-align: center;
+}
+
+.pad-horizontal-1 {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.border-radius-10 {
+    border-radius: 5px;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.img-responsive {
+	max-width: 100%;
+}
+
+.list-inline {
+    li {
+        display: inline-block;
+    }
+}
+
+.list-block {
+    li {
+        display: block;
+    }
+}
+
+.no-margin-top {
+	margin-top: 0 !important;
+}
+
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.has-croll {
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+    @media (min-width: 768px) {
+        height: auto;
+        overflow: visible;
+    }
+}
+
+
+.hide-mobile {
+    @media (min-width: 0) and (max-width: 767px) {
+        display: none
+    }
+}
+.hide-tablet {
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: none
+    }
+}
+.hide-desk {
+    @media (min-width: 992px) {
+        display: none
+    }
+}
+
+
+.show-mobile {
+    @media (min-width: 0) and (max-width: 767px) {
+        display: block
+    }
+}
+.show-tablet {
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: block
+    }
+}
+.show-desk {
+    @media (min-width: 992px) {
+        display: block
+    }
+}

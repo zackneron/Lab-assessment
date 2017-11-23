@@ -200,3 +200,17 @@ p {
         display: block
     }
 }
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $blue_grey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $blue_grey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $blue_grey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $blue_grey;
+}
